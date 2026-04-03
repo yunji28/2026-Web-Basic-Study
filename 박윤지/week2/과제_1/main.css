@@ -1,7 +1,6 @@
-/* 기본 박스 모델 초기화 */
 * {
-  margin : 0; /* 여백 제거하는 속성 */
-  padding : 0;  /* 내부 여백 제거하는 속성 */
+  margin : 0;
+  padding : 0;
   box-sizing: border-box; 
 }
 
@@ -50,11 +49,11 @@ body {
 }
 
 /* :hover 선택자-마우스를 요소 위에 올렸을 때 적용 */
-.calculator form:hover {
+/* [속성=값] - 속성 선택자. 요소 선택자와의 사이에 띄어쓰기 X*/
+.calculator form input[type="button"]:hover {
   box-shadow: 1px 1px 2px #696969;
 }
 
-/* 버튼 색상 및 크기 설정 */
 .calculator form .clear {
   color: #ed4848;
   grid-column: span 3;  /* span: 차지할 개수 지정 */
@@ -76,7 +75,7 @@ body {
   padding: 10px;
   font-size: 20px;
   border-radius: 6px;
-  border: 1px, solid, #bbb;
+  border: 1px solid #bbb;
   background-color: #f9f9f9;
 }
 

@@ -1,15 +1,12 @@
 body {
 	height: 100vh;
-	/* 배경 이미지를 넣어주세요 */
 	background-image: url("./images/background.jpeg");
-	background-color: #ff9c00;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 .container {
-	/* 내부 여백의 상하 50px, 좌우 0으로 설정하는 코드 작성해 주세요 */
 	padding: 50px 0px;
 }
 
@@ -26,7 +23,6 @@ body {
 }
 
 .container .pokemons .pokemon {
-	position: relative;
 	box-sizing: border-box;
 	width: 80px;
 	height: 84px;
@@ -47,6 +43,7 @@ body {
 
 .container .pokemons .pokemon .image {
 	position: relative;
+	/*포켓몬 이미지 이동. 기준선 right으로부터 13px만큼 밀어낸다*/
 	right: 13px;
 	width: 140%;
 	height: 100%;
