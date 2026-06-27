@@ -18,7 +18,7 @@ function AddMoviePage({ movies, setMovies }) {
     const handleChange = (e) => {
         const { name, value } = e.target;
         /* 스프레드 연산자로 기존 객체를 복사한 뒤, 변경된 키만 덮어 쓴다.*/
-        setFormData((prev) => ({ ...prev, [name]: value }));
+        setFormData({...formData, [name]: value});
     };
 
     // 3. 새로운 영화 등록 핸들러 함수
